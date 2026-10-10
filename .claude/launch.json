@@ -1,0 +1,29 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "dev",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": ["dev"],
+      "port": 5178
+    },
+    {
+      "name": "demo",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": ["demo"],
+      "port": 5178
+    },
+    {
+      "name": "web-live",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": ["--filter", "@deeds-table/web", "dev"],
+      "port": 5178
+    },
+    {
+      "name": "preview",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": ["preview"],
+      "port": 4178
+    }
+  ]
+}
